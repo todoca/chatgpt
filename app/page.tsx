@@ -4,21 +4,23 @@ import {
   SunIcon,
 } from "@heroicons/react/24/outline";
 const HomePage = () => {
+  const year = new Date().getFullYear();
   return (
     <div className="text-white flex flex-col items-center justify-center h-screen px-2 ">
-      <h1 className="text-5xl font-bold mb-4">ChatGPT</h1>
-      <h2 className="text-3xl font-bold mb-4">Hecho con amor por...</h2>
-      <h3 className="text-4xl underline font-bold mb-20">TODOCA</h3>
+      <h1 className="text-5xl font-bold mb-4">TodocaGPT</h1>
+      <h2 className="text-3xl font-bold mb-4">
+        Crea un nuevo chat y hablemos...
+      </h2>
 
       <div className="flex space-x-2 text-center">
         <div>
           <div className="flex flex-col items-center justify-center mb-5">
             {/* sun Icon */}
             <SunIcon className="h-8 w-8" />
-            <h2>Examples</h2>
+            <h2>Ejemplos</h2>
           </div>
           <div className="space-y-2">
-            <p className="infoText">"Explicame algo"</p>
+            <p className="infoText">"Explicame algo..."</p>
             <p className="infoText">
               "¿Cual es la diferencia entre un perro y un gato?"
             </p>
@@ -32,10 +34,17 @@ const HomePage = () => {
             <h2>Bondades</h2>
           </div>
           <div className="space-y-2">
-            <p className="infoText">Cambia el modelo de ChatGPT a usar</p>
-            <p className="infoText">Los mensajes son registrados en Firebase</p>
             <p className="infoText">
-              Notificación de ChatGPT que esta pensando para responder!
+              Cambia el modelo a usar, dependiendo del modelo puedo ser más
+              creativo o lógico
+            </p>
+            <p className="infoText">
+              tus consultas y chat que abras siempre estaran almacenados para
+              cuando los necesites
+            </p>
+            <p className="infoText">
+              Puedes desde pedirme crear contenido para una publicidad o
+              programarte cosas sencillas.
             </p>
           </div>
         </div>
@@ -60,6 +69,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <p className="mt-20">Hecho con amor... {year}</p>
     </div>
   );
 };

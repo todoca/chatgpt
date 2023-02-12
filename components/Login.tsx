@@ -16,7 +16,7 @@ const Login = () => {
         className="text-white font-bold text-3xl animate-pulse mt-10"
         onClick={() => signIn("google")}
       >
-        Sign In to use TodocaGPT
+        Hola! soy TodocaGPT hazme click, logueate y diviertete!
       </button>
     </div>
   );
